@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моделирование холодильника</title>
+    <script src="./js/fridge.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="btnModel">
+            <h1>Menu</h1>
+            <h2>Mode is <span id="modeIs">1</span></h2>
+            <div class="activeBtn">
+                <a id="openDoorBtn">
+                    <p class="btn">Open door</p>
+                </a>
+                <a id="closeDoorBtn">
+                    <p class="btn">Close door</p>
+                </a>
+                <a id="changeModeToOne">
+                    <p class="btn">Change mode to 1</p>
+                </a>
+                <a id="changeModeToTwo">
+                    <p class="btn">Change mode to 2</p class="btn">
+                </a>
+                <a id="changeModeToThree">
+                    <p class="btn">Change mode to 3</p>
+                </a>
+                <a id="exit">
+                    <p class="btn">Exit</p>
+                </a>
+            </div>
+            <h2 class="Timer"> <span id="text"></span><span id="time">00:00</span> seconds!</h2>
+        </div>
+        <div class="fridgeView">
+            <img id="closeDoor" src="./img/closeFridge.png" alt="closeFridge">
+            <div class="box">
+                <div class="yellow"></div>
+                <img class="imgFridge" id="openDoor" src="./img/openFridge.png" alt="openFridge" style="display: none;">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
